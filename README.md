@@ -5,7 +5,8 @@ This is an example of Randy's coding skills, as part of the requested interview 
 ## Quick Start
 
 ```
-Please just copy all files into an empty folder and open the 'DoctorRatings.sln' file in Visual Studio 2017 or newer.
+Please just copy all files into an empty folder and 
+open the 'DoctorRatings.sln' file in Visual Studio 2017 or newer.
 
 * Rebuild the entire solution.
 * Launch the 'DoctorRatingsServer' project first.
