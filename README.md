@@ -51,6 +51,3 @@ Of all the "interview strategies" I have been a part of, "Just show me your code
 
 * **Randall Warren** - *Senior Software Developer* - Created 03/28/19 for EY.
 
-<georgiavista@gmail.com>
-
-Cell: 678-936-2809
