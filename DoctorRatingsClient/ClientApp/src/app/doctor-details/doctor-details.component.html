@@ -1,0 +1,54 @@
+<h1>Doctor Details</h1>
+
+<p>Please review the doctor ratings below.</p>
+
+<p *ngIf="!doctorDetails"><em>Loading...</em></p>
+<hr>
+
+<div *ngIf="doctorDetails">
+    <h3>{{doctorDetails.name}}<span *ngIf="doctorDetails.superStar == 'True'" class="superstar">Superstar!</span></h3>
+    <div>
+        <label class="col-sm-2 col-form-label">Record ID: </label>
+        <input class="col-sm-4" [(ngModel)]="doctorDetails.id" placeholder="name"/>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">Gender: </label>
+        <input class="col-sm-4" [(ngModel)]="doctorDetails.gender" placeholder="name"/>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">Specialties: </label>
+        <input class="col-sm-4" [(ngModel)]="doctorDetails.specialties" placeholder="name"/>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">Average Rating: </label>
+        <input class="col-sm-4" [(ngModel)]="doctorDetails.avgRating" placeholder="name"/>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">Language Spoken: </label>
+        <input class="col-sm-4" [(ngModel)]="doctorDetails.language" placeholder="name"/>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">Medical School: </label>
+        <input class="col-sm-4" [(ngModel)]="doctorDetails.school" placeholder="name"/>
+    </div>
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-primary" (click)="goBack()">Back</button>
+    </div>
+</div>
+
+<div *ngIf="patientReviews">
+<h5 class="mt-5">Patient Reviews</h5>
+<table class='table table-striped' *ngIf="patientReviews">
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patientReview of patientReviews">
+      <td>{{ patientReview.comments }}</td>
+      <td>{{ patientReview.rating }}</td>
+    </tr>
+  </tbody>
+</table>

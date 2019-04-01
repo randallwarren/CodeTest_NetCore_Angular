@@ -1,0 +1,26 @@
+<h1>Doctor List</h1>
+
+<p>Please select a doctor name from the list below.</p>
+
+<p *ngIf="!doctors"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="doctors">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Doctor Name</th>
+      <th>Gender</th>
+      <th>Specialties</th>
+      <th>Average Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let doctor of doctors">
+      <td>{{ doctor.id }}</td>
+      <td><a [routerLink]="['/doctor-details', doctor.id]">{{ doctor.name }}</a></td>
+      <td>{{ doctor.gender }}</td>
+      <td>{{ doctor.specialties }}</td>
+      <td>{{ doctor.avgRating }}</td>
+    </tr>
+  </tbody>
+</table>
