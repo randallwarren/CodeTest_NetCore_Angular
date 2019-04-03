@@ -1,6 +1,6 @@
 # Doctor Ratings Example Project
 
-This is an example of Randy's coding skills, as part of the requested interview process, in hopes of someday working for EY.
+This is an example of a .Net Core Client/Server using Angular, EF, LINQ and SQLite.
 
 ## Quick Start
 
