@@ -49,5 +49,5 @@ Of all the "interview strategies" I have been a part of, "Just show me your code
 
 ## Authors
 
-* **Randall Warren** - *Senior Software Developer* - Created 03/28/19 for EY.
+* **Randall Warren** - *Senior Software Developer* - Created 03/28/19
 
